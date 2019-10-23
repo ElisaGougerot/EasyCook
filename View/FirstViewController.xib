@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="ProjetMiseNiveauIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="FirstNextButton" destination="yrN-ab-Vez" id="vVX-yk-oED"/>
+                <outlet property="RecetteTableView" destination="bKh-Bc-Od9" id="ZG9-ZE-btZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-Bc-Od9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrN-ab-Vez">
+                    <rect key="frame" x="343" y="812" width="51" height="30"/>
+                    <state key="normal" title="Suivant"/>
+                    <connections>
+                        <action selector="TouchFirstNextButton:" destination="-1" eventType="touchUpInside" id="ghS-0M-LY2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yrN-ab-Vez" secondAttribute="trailing" constant="20" id="BHl-Cw-GQg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yrN-ab-Vez" secondAttribute="bottom" constant="20" id="IoP-Nv-U8a"/>
+                <constraint firstItem="bKh-Bc-Od9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bMV-Kr-yqn"/>
+                <constraint firstItem="bKh-Bc-Od9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oAa-UY-wXD"/>
+                <constraint firstItem="bKh-Bc-Od9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vH1-xY-btP"/>
+                <constraint firstAttribute="bottom" secondItem="bKh-Bc-Od9" secondAttribute="bottom" id="vme-Ab-UaC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
